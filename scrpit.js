@@ -6,6 +6,14 @@ function goToRegister(){
   window.location.href = "register.html";
 }
 
+function toggleMenu(){
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+
+function closeMenu(){
+  document.querySelector(".nav-links").classList.remove("active");
+}
+
 document.addEventListener("DOMContentLoaded", ()=>{
   const form = document.getElementById("contactForm");
   if(form){
