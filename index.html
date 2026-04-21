@@ -15,12 +15,22 @@
 <nav class="navbar">
   <h2 class="logo">Stackly</h2>
 
+  <!-- ☰ MENU ICON -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+    <li><a href="#technologies" onclick="closeMenu()">Technologies</a></li>
+    <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+
+    <!-- MOBILE LOGIN -->
+    <li><a href="login.html">Login</a></li>
+    <li><a href="register.html">Create Account</a></li>
   </ul>
+
   <div class="nav-buttons">
     <a href="login.html" class="login-btn">Login</a>
     <a href="register.html" class="register-btn">Create Account</a>
@@ -99,19 +109,27 @@
 <!-- SERVICES -->
 <section id="services">
   <h2>Our Services</h2>
+
   <div class="services">
+
     <div class="card">
-      <img src="Images/pakata-goh-RDolnHtjVCY-unsplash.webp">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Web Development">
       <h3>Web Development</h3>
+      <p>Modern, responsive and high-performance websites.</p>
     </div>
+
     <div class="card">
-      <img src="Images/pakata-goh-RDolnHtjVCY-unsplash.webp">
+      <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c" alt="App Development">
       <h3>App Development</h3>
+      <p>Powerful mobile and web applications for business growth.</p>
     </div>
+
     <div class="card">
-      <img src="Images/vagaro-29KolnrEtDY-unsplash.webp">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Cloud Services">
       <h3>Cloud Services</h3>
+      <p>Secure and scalable cloud-based infrastructure solutions.</p>
     </div>
+
   </div>
 </section>
 
