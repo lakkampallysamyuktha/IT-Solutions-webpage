@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +19,9 @@
   <!-- ☰ MENU ICON -->
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
+  <!-- MENU -->
   <ul class="nav-links">
+
     <li><a href="#home" onclick="closeMenu()">Home</a></li>
     <li><a href="#about" onclick="closeMenu()">About</a></li>
     <li><a href="#services" onclick="closeMenu()">Services</a></li>
@@ -26,29 +29,24 @@
     <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
     <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
 
-    <!-- MOBILE LOGIN -->
-    <li><a href="login.html">Login</a></li>
-    <li><a href="register.html">Create Account</a></li>
-  </ul>
+    <!-- ✅ LOGIN INSIDE MENU -->
+    <li class="mobile-login">
+      <a href="login.html">Login</a>
+    </li>
 
-  <div class="nav-buttons">
-    <a href="login.html" class="login-btn">Login</a>
-    <a href="register.html" class="register-btn">Create Account</a>
-  </div>
+  </ul>
 </nav>
+
 
 <!-- HERO -->
 <section id="home" class="hero">
   <div class="overlay">
-
     <span class="tagline">Empowering Digital Innovation</span>
 
-    <h1 class="hero-title">
-      Innovative IT Solutions for a Digital Future
-    </h1>
+    <h1 class="hero-title">Innovative IT Solutions</h1>
 
     <p class="hero-text">
-      At Stackly, we provide cutting-edge digital solutions designed to help 
+        At Stackly, we provide cutting-edge digital solutions designed to help 
       businesses grow, scale, and succeed in today’s competitive world. 
       From modern websites and mobile applications to cloud-based systems, 
       our team delivers secure, scalable, and high-performance solutions 
@@ -56,7 +54,7 @@
     </p>
 
     <div class="hero-buttons">
-      <button onclick="goToRegister()" class="primary-btn">
+      <button onclick="scrollToSection('services')" class="primary-btn">
         Get Started
       </button>
 
@@ -64,11 +62,11 @@
         Learn More
       </button>
     </div>
-
   </div>
 </section>
 
 <!-- ABOUT -->
+
 <section id="about" class="about">
   
   <div class="about-left">
@@ -109,30 +107,82 @@
 <!-- SERVICES -->
 <section id="services">
   <h2>Our Services</h2>
-
   <div class="services">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Web Development">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
       <h3>Web Development</h3>
-      <p>Modern, responsive and high-performance websites.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c" alt="App Development">
+      <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c">
       <h3>App Development</h3>
-      <p>Powerful mobile and web applications for business growth.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Cloud Services">
+      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa">
       <h3>Cloud Services</h3>
-      <p>Secure and scalable cloud-based infrastructure solutions.</p>
     </div>
 
   </div>
 </section>
 
+<!-- TECHNOLOGIES -->
+<section id="technologies">
+  <h2>Technologies We Use</h2>
+
+  <div class="tech-grid">
+
+    <div class="tech-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+      <p>HTML</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+      <p>CSS</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png">
+      <p>React</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png">
+      <p>Node.js</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721266.png">
+      <p>Cloud</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <h2>Latest Blogs</h2>
+  <div class="blog">
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+      <h3>Tech Trends</h3>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <h3>Development Tips</h3>
+    </div>
+
+  </div>
+</section>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -145,10 +195,10 @@
   </form>
 </section>
 
-<script src="scrpit.js"></script>
 <footer class="footer">
-  <p>© 2026 Stackly IT Solutions. All rights reserved.</p>
+  <p>© 2026 Stackly IT Solutions</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
