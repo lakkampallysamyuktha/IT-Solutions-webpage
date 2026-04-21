@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly IT Solutions</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">Stackly</h2>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-buttons">
+    <a href="login.html" class="login-btn">Login</a>
+    <a href="register.html" class="register-btn">Create Account</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="overlay">
+
+    <span class="tagline">Empowering Digital Innovation</span>
+
+    <h1 class="hero-title">
+      Innovative IT Solutions for a Digital Future
+    </h1>
+
+    <p class="hero-text">
+      At Stackly, we provide cutting-edge digital solutions designed to help 
+      businesses grow, scale, and succeed in today’s competitive world. 
+      From modern websites and mobile applications to cloud-based systems, 
+      our team delivers secure, scalable, and high-performance solutions 
+      tailored to your business needs.
+    </p>
+
+    <div class="hero-buttons">
+      <button onclick="goToRegister()" class="primary-btn">
+        Get Started
+      </button>
+
+      <button onclick="scrollToSection('about')" class="secondary-btn">
+        Learn More
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  
+  <div class="about-left">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Team Work">
+  </div>
+
+  <div class="about-right">
+    <h2>About Us</h2>
+
+    <p>
+      Stackly is a modern IT solutions company dedicated to delivering innovative, 
+      scalable, and high-performance digital products. We specialize in transforming 
+      ideas into real-world applications that help businesses grow and succeed in 
+      the digital era.
+    </p>
+
+    <p>
+      Our team of skilled developers, designers, and technology experts work together 
+      to build responsive websites, powerful mobile applications, and secure cloud 
+      solutions. We focus on user experience, performance, and reliability to ensure 
+      the best outcomes for our clients.
+    </p>
+
+    <p>
+      With expertise in web development, cloud computing, and emerging technologies, 
+      we help startups and enterprises stay ahead in a fast-changing digital landscape.
+    </p>
+
+    <p>
+      Our mission is to empower businesses through technology, delivering smart, 
+      efficient, and future-ready solutions.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <img src="Images/pakata-goh-RDolnHtjVCY-unsplash.webp">
+      <h3>Web Development</h3>
+    </div>
+    <div class="card">
+      <img src="Images/pakata-goh-RDolnHtjVCY-unsplash.webp">
+      <h3>App Development</h3>
+    </div>
+    <div class="card">
+      <img src="Images/vagaro-29KolnrEtDY-unsplash.webp">
+      <h3>Cloud Services</h3>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script src="scrpit.js"></script>
+<footer class="footer">
+  <p>© 2026 Stackly IT Solutions. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
